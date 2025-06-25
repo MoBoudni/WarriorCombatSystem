@@ -3,12 +3,10 @@ package com.battlegame.warriors;
 
 /**
  * Die Warrior-Klasse repräsentiert einen Krieger in einem kampfbasierten Spiel.
-
  * Diese Klasse implementiert das grundlegende Verhalten eines Kriegers mit
  * Angriffs-, Verteidigungs- und Teleportationsfähigkeiten. Sie demonstriert
  * objektorientierte Programmierkonzepte wie Kapselung, Konstruktor-Überladung
  * und Interface-Integration.
- * 
  * 
  * Jeder Warrior besitzt Attribute (Name, Gesundheit, Angriffs- und Blockwerte)
  * und Fähigkeiten (angreifen, blocken, teleportieren), die durch Methoden
@@ -33,7 +31,6 @@ public class Warrior {
      * 
      * Geschützt (protected), sodass Unterklassen direkten Zugriff haben,
      * aber externe Klassen die Getter/Setter-Methoden verwenden müssen.
-     * 
      */
     protected String name = "Warrior";
 
@@ -42,7 +39,6 @@ public class Warrior {
      * 
      * Wenn die Gesundheit auf 0 oder darunter fällt, gilt der Krieger als besiegt.
      * Öffentlich zugänglich für direkte Manipulation in Kampfsituationen.
-     * 
      */
     public int health = 0;
 
@@ -70,7 +66,6 @@ public class Warrior {
      * ob der Krieger teleportieren kann ({@link CanTeleport}) oder nicht
      * ({@link CantTeleport}). Dies demonstriert das Strategy-Pattern.
      * 
-     * 
      * @see Teleports
      * @see #teleport()
      * @see #setTeleportAbility(Teleports)
@@ -95,7 +90,6 @@ public class Warrior {
      * Erstellt einen Krieger mit allen notwendigen Attributen. Dies ist
      * der bevorzugte Konstruktor für die meisten Anwendungsfälle, da er
      * sicherstellt, dass alle wichtigen Werte von Anfang an gesetzt sind.
-     * 
      * 
      * @param name Der Name des Kriegers (darf nicht null oder leer sein)
      * @param health Die anfänglichen Gesundheitspunkte (sollte positiv sein)
@@ -131,8 +125,7 @@ public class Warrior {
      * Generiert einen zufälligen Blockwert zwischen 1 und {@link #blockMax}.
      * Dieser Wert wird vom eingehenden Schaden abgezogen, um den
      * tatsächlichen erlittenen Schaden zu berechnen.
-
-     * 
+     *
      * @return ein zufälliger Blockwert zwischen 1 und blockMax (inklusive)
      * @see #attack()
      */
