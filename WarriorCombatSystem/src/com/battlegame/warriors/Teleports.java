@@ -82,11 +82,9 @@ class CantTeleport implements Teleports {
 
     /**
      * Simuliert eine fehlgeschlagene Teleportation.
-
      * Diese Implementierung simuliert den Versuch einer Teleportation,
      * der bei Kriegern ohne entsprechende magische Fähigkeiten fehlschlägt.
      * Dies kann für Spielbalance oder narrative Zwecke verwendet werden.
-     * 
      * 
      * @return "Fails at Teleporting" - Meldung über das Scheitern der Teleportation
      */
