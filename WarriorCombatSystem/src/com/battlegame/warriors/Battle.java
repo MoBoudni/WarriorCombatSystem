@@ -6,7 +6,6 @@ package com.battlegame.warriors;
  * Diese Klasse enthält ausschließlich statische Methoden, da Kampfoperationen
  * keinem spezifischen Objekt zugeordnet werden müssen und allgemeine
  * Funktionalitäten für alle Warrior-Objekte bereitstellen.
- *
  * 
  * @author MoBoudni
  * @version 1.0
